@@ -1,0 +1,35 @@
+/* Reset & Basic Styling */
+* {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+body {background:#f7f7f7; color:#333;}
+
+/* Header */
+header {background:#ff8c00; color:white; padding:20px; text-align:center;}
+header h1 {font-size:2rem; margin-bottom:5px;}
+header p {font-size:1rem;}
+
+/* Navigation */
+nav {text-align:center; margin:10px 0;}
+nav a {margin:0 15px; text-decoration:none; color:#333; font-weight:bold; transition: color 0.3s;}
+nav a:hover {color:#ff8c00;}
+
+/* Gallery */
+.gallery {display:flex; flex-wrap:wrap; justify-content:center; gap:15px; padding:20px;}
+.gallery img {width:250px; height:250px; object-fit:cover; border-radius:10px; transition: transform 0.3s, box-shadow 0.3s;}
+.gallery img:hover {transform: scale(1.05); box-shadow:0 5px 15px rgba(0,0,0,0.2);}
+
+/* Contact Form */
+.contact {background:#fff; padding:30px; max-width:600px; margin:20px auto; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1);}
+.contact h2 {margin-bottom:20px; text-align:center;}
+.contact form {display:flex; flex-direction:column; gap:15px;}
+.contact input, .contact textarea {padding:10px; border:1px solid #ccc; border-radius:5px; width:100%; transition: border 0.3s;}
+.contact input:focus, .contact textarea:focus {border-color:#ff8c00; outline:none;}
+.contact button {padding:10px; border:none; border-radius:5px; background:#ff8c00; color:white; font-weight:bold; cursor:pointer; transition: background 0.3s;}
+.contact button:hover {background:#e07b00;}
+
+/* Footer */
+footer {text-align:center; padding:15px; background:#333; color:white; margin-top:20px; font-size:0.9rem;}
+
+/* Responsive */
+@media (max-width:600px){
+  .gallery img {width:100%; height:auto;}
+}
